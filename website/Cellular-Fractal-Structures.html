@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Cellular Fractal Structures</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="default.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Cellular Fractal Structures</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#tetrahedral-cell">Tetrahedral Cell</a></li>
+<li><a href="#tubes">Tubes</a></li>
+<li><a href="#tensegrity-kites">Tensegrity Kites</a>
+<ul>
+<li><a href="#tiling">Tiling</a></li>
+</ul></li>
+<li><a href="#icosahedral-cell">Icosahedral Cell</a>
+<ul>
+<li><a href="#three-golden-rectangles">Three Golden Rectangles</a></li>
+<li><a href="#platonic-icosahedron">Platonic Icosahedron</a></li>
+<li><a href="#tensegrity-icosahedron">Tensegrity Icosahedron</a></li>
+</ul></li>
+</ul>
+</nav>
+<p>Cellular fractal structures are one of the basic design motifs of Eumirion.</p>
+<ul>
+<li>Cellular
+<ul>
+<li>Made of "cells"
+<ul>
+<li>simple units</li>
+<li>(semi-)autonomous</li>
+<li>Simple construction algorithms</li>
+</ul></li>
+<li>connected in simple ways to form larger "multicellular" structures.</li>
+<li>simulation using Finite Element Modeling</li>
+</ul></li>
+<li>Fractal
+<ul>
+<li>Self-similar on multiple scales</li>
+<li>Concise descriptions</li>
+<li>reusable designs and techniques</li>
+</ul></li>
+<li>Structures
+<ul>
+<li>volume-to-surface ratio constant as the structure scales.
+<ul>
+<li><a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Tetrahedral_kite">Alexander G. Bell's cellular kites</a>. Bell wanted to show that heavier-than-air craft were not doomed to be no more than bird-sized.</li>
+</ul></li>
+</ul></li>
+</ul>
+<h1 id="tetrahedral-cell">Tetrahedral Cell</h1>
+<p>Two sides of a tetrahedron approximate a <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Rogallo_wing.html">Rogallo wing</a>.</p>
+<p><img src="images/tetra-cell-single.png" alt="image" /></p>
+<p>We can connect four units together to make a <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Sierpinski_triangle">Sierpinski</a> gasket.</p>
+<p><img src="images/tetra-cell-4x.png" alt="image" /></p>
+<p>We can repeat the process to make larger units.</p>
+<p><img src="images/tetra-cell-16x.png" alt="image" /></p>
+<p><img src="images/tetra-cell-64x.png" alt="image" /></p>
+<p>A Five-meta-tetrahedron.</p>
+<p><img src="images/rotating-tetra-cell-large-flock.gif" alt="image" /></p>
+<p>From the top, orthogonal view you can see that the cells tile the plane because the tetrahedra are all oriented inside virtual cubes and each x,y location has a cube/tetra covering it.</p>
+<p><img src="images/tetra-cell-large-flock-top-ortho.png" alt="image" /></p>
+<p>Seen edge-on with perspective the flock is almost invisible.</p>
+<p><img src="images/tetra-cell-large-flock-edge-on-perspective.png" alt="image" /></p>
+<p>From the x=-y=z axis you get this lovely triangular symmetry.</p>
+<p><img src="images/tetra-cell-large-flock-triangular-ortho.png" alt="image" /></p>
+<p>From one point of view this structure is 2-dimensional, but it's also 3-dimensional in the sense that it occupies a volume.</p>
+<p>There are other possibilities. This is what Bucky called <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Space_frame">"Octet Truss"</a>.</p>
+<p><img src="images/rotating-tetra-cell-cube-flock.gif" alt="image" /></p>
+<p>There's room to double up the triangles with a second octet truss.</p>
+<p><img src="images/rotating-tetra-cell-double-cube-flock.gif" alt="image" /></p>
+<p>You could assemble fractal units of, say, degree five, and then use those to make the octet truss structures. If the units are approximately 3 meters along an edge then the 5-tetra would be 16 * 3 = 48 meters, and a stack of seven would 48 / &#x221A;2 * 7 = 237.6 meters high.</p>
+<p>(The minimum distance between two opposite edges of a tetrahedron is the height of the cube defined by the tetrahedron's verticies.)</p>
+<p>This kite would provide enough leftover lift to carry a payload (either depending from it or embedded in it) in the form of a cabin and/or cargo.</p>
+<p>Note the images above are all upside down compared to how kites are usually constructed. I think this would work but if I'm wrong then just turn the tetras upsidedown.</p>
+<h1 id="tubes">Tubes</h1>
+<p>Almost anything can be made into a fractal. If we start with simple tubes we can glue them together laterally to form triangular triplets, and then repeat the process a few times to get <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Sierpinski_triangle">Sierpinski</a> gaskets, which can then be tiled to make a very simple and sturdy planar structure.</p>
+<p><img src="images/tubes-tiled.png" alt="image" /></p>
+<p>If the tubes vary in radius (in other words, if they are sections of cones) they will naturally form curved surfaces.</p>
+<p><img src="images/meta-cylinder.png" alt="image" /></p>
+<p>This is just a crude conceptual graphic, meant to illustrate the idea but it's not to any particular scale. Note the similarity to a (literal) cell wall, which is formed out of two layers of moleculars. The molecules are hydrophillic on one end and hydrophobic on the other and naturally arrange themselves into first bubbles, then tubes, then sheets, (then tubes and then bubbles again) as the ratio of water to the other stuff changes.</p>
+<p>In this case the differential between the inside of the meta-tube and the outside is thermal. The meta-tube would be sealed at both ends and the air inside allowed to heat up. The outer surface of the sub-tubes is dark while the inner surface is shiny, so therefore are the surfaces of the meta-tube. As the air in the tube heats up it expands and some of it is pushed out of the meta-tube. When the mass of the displaced air is greater than the mass of the tube it will become a hot-air balloon and float. This is Bucky's <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Cloud_Nine_(tensegrity_sphere).html">Cloud 9</a> idea.</p>
+<p>The units in these structures are not resting on the ones below them. The cells are floating in addition to the entire structure. You're basically building larger hot-air balloons out of smaller ones.</p>
+<h1 id="tensegrity-kites">Tensegrity Kites</h1>
+<p>The simplest Tensegrity structure is a three-strut triangular prism. (The tethers connecting the top and bottom triangular sails are not shown in this image.)</p>
+<p><img src="images/rotating-tri-cell.gif" alt="image" /></p>
+<p>Top view, orthogonal</p>
+<p><img src="images/kite-cell-top-ortho.png" alt="image" /></p>
+<p>Each cell consists of:</p>
+<ul>
+<li>Two triangular sails</li>
+<li>Three struts</li>
+<li>Three tendons</li>
+<li>six interconnects</li>
+</ul>
+<p>The construction would be something like:</p>
+<ol>
+<li>Attach interconnects to the ends of the struts.</li>
+<li>Set the struts in a jig to hold them in the proper formation.</li>
+<li>Clip on the sails and tethers.</li>
+</ol>
+<p>It's difficult to accurately imagine the stiffness and lightness of these structures without building and handling physical models.</p>
+<h2 id="tiling">Tiling</h2>
+<p>It can be tiled to make large kite "membranes":</p>
+<p><img src="images/tiled-cellular-kite.png" alt="image" /></p>
+<p>The tricky bit seems to me to be the connection between kite cells.</p>
+<p>Side view, orthogonal</p>
+<p><img src="images/tiled-cellular-kite-side-ortho.png" alt="image" /></p>
+<p>Top view, orthogonal</p>
+<p><img src="images/tiled-cellular-kite-top-ortho.png" alt="image" /></p>
+<p>And, again, if the "top" and "bottom" sails are different sizes the resulting membranes will be curved.</p>
+<h1 id="icosahedral-cell">Icosahedral Cell</h1>
+<ul>
+<li>six struts
+<ul>
+<li>length Phi (edge length of icosa is 1.)</li>
+<li>ends are twelve verticies of icosa.</li>
+<li>three pairs, 1 x Phi Golden Rectangle, oriented on Cartesian axies, cube symmetry.</li>
+</ul></li>
+<li>eight equilateral triangles
+<ul>
+<li>icosa faces, edge length 1</li>
+<li>octahedral symmetry.</li>
+<li>other 12 faces and 6 edges are not part of the system</li>
+</ul></li>
+<li>Own frame of reference</li>
+<li>interconnected web of tension and compression with no center, self-stable.</li>
+<li>NASA robotics project (led by V. Sunspiral)</li>
+</ul>
+<h2 id="three-golden-rectangles">Three Golden Rectangles</h2>
+<p><img src="images/three-Golden-Rectangles.png" alt="image" /></p>
+<h2 id="platonic-icosahedron">Platonic Icosahedron</h2>
+<p>Connect the corners of the rectangles with edges defining equilateral triangles and you have an icosahedron.</p>
+<p><img src="images/icosahedron.png" alt="image" /></p>
+<h2 id="tensegrity-icosahedron">Tensegrity Icosahedron</h2>
+<p><img src="images/tensegrity-icosahedron.png" alt="image" /></p>
+<p><img src="images/rotating-tensegrity-icosa.gif" alt="image" /></p>
+<div id="footer">
+&copy; 2018 <a xmlns:cc="http://creativecommons.org/ns#"
+href="/ipfs/QmNkq5RxznadwjtcGuL5DdNvRctfwk2hq7B9Wuf5DYQCHV"
+property="cc:attributionName"
+rel="cc:attributionURL">Simon Forman</a>
+<br />
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+<img alt="Creative Commons License" style="border-width:0" src="images/CC.png" />
+</a><br />
+This work is licensed under a
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+</a>.
+</div>
+
+
+</body>
+</html>
