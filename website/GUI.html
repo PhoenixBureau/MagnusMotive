@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>A Graphical User Interface</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="default.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">A Graphical User Interface</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#tkinter-ui"><span>Tkinter UI</span></a></li>
+<li><a href="#pygame-model">PyGame Model</a></li>
+<li><a href="#web-browser">Web Browser</a></li>
+<li><a href="#meta-interpreter-actions">Meta-Interpreter Actions</a>
+<ul>
+<li><a href="#backtime-history">Backtime (History)</a></li>
+<li><a href="#ipfs-and-content-addressing">IPFS and content addressing</a></li>
+<li><a href="#refactoring">Refactoring</a></li>
+</ul></li>
+</ul>
+</nav>
+<p>Eventually to be implemented in Joy for the Wirth RISC</p>
+<ul>
+<li>History
+<ul>
+<li><a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Oberon_(operating_system).html">Oberon OS</a></li>
+<li><a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/The_Humane_Interface.html">"Humane Interface"</a> by Jef Raskin</li>
+</ul></li>
+<li>Structure
+<ul>
+<li>Text Windows (no widgets. Peripherals!)</li>
+<li>Versioned File Repo JOY_HOME</li>
+<li>World contains dictionary and stack, interprets commands</li>
+</ul></li>
+<li>Commands
+<ul>
+<li>Mouse Chords</li>
+<li>Keyboard</li>
+</ul></li>
+<li>Output from Joy
+<ul>
+<li>print redirected to log text</li>
+<li>command printed before each evaluation</li>
+<li>stack printed after</li>
+<li>Python Tracebacks pop up an "error" or "trap" text.</li>
+</ul></li>
+</ul>
+<p>TODO: find the other stuff I've written about the UI and include it here.</p>
+<p>The basic idea is that there is a single "space" or world that consists of the stack, the dictionary, and the interpreter. All operations are performed by putting things onto the stack and running Joy commands on them. (Eventually there will be "meta-interpreter" actions.) Joy commands can be specified from the keyboard or by the mouse. All history is saved in a local VCS repository. All content is static, as soon as you stop typing or a command completes the current state of the system is written to disk. Previous history can be accessed and brought into the current active world.</p>
+<p>There aren't any widgets. There aren't any menus. Just text windows.</p>
+<p>(I want to make and use physical peripherals, slider bars, knobs and wheels, levers, dials, etc.)</p>
+<h1 id="tkinter-ui"><a href="source/joypy/joy/gui">Tkinter UI</a></h1>
+<p><img src="images/Joypy-GUI.png" alt="image" /></p>
+<p>Exists, pretty feature-complete MVP.</p>
+<p>Pros: Simple, powerful, easy, low-overhead. Supports (simple) graphics canvas.</p>
+<p>Cons: Leaning on Tkinter might raise the bar for the eventual self-hosted UI (i.e. undo/redo)? Tkinter doesn't work well on mac (wtf Apple!?). Obscure, almost "Brutalist" interface. (I like it but others don't.) Runs slow on rPi</p>
+<h1 id="pygame-model">PyGame Model</h1>
+<p>Crude but functional, meant to serve as a model for Joy/RISC implementation.</p>
+<p>Pros: Eat own dogfood. Runs fast-ish on rPi. Establishes practicality of Joy code for "real" world problems. Very technically satisfying, self-hosted.</p>
+<p>Cons: Eat own dogfood. High overhead. Low on features. Kinda crude.</p>
+<h1 id="web-browser">Web Browser</h1>
+<p>Write a server wrapper for Joy and use browser as UI. (Or use e.g. websocketd.)</p>
+<p>I have old experiments (including Joy in JS for the client-side) but nothing mature.</p>
+<p>Pros: Very simple on server-side. Lots of middleware. Path to distributed Joy systems. Can take advantage of e.g. SVG, Joy code only has to emit symbolic reprs, not handle implementation.</p>
+<p>Cons: Reliant on browsers. Middling high overhead. Distracts from main thrust. Have to develop an API.</p>
+<h1 id="meta-interpreter-actions">Meta-Interpreter Actions</h1>
+<p>Some actions are not defined within the scope of the world (the stack, dictionary and interpreter.)</p>
+<h2 id="backtime-history">Backtime (History)</h2>
+<p>One primary example is accessing the previous history of the world. Because the current history is stored in a git repository, you can use any git server (including the 'git serve' command that is a part of Git) to access it to check diffs or recover old content and commands.</p>
+<h2 id="ipfs-and-content-addressing">IPFS and content addressing</h2>
+<p>TODO: something about permanent content-addressable global storage. It's a whole different concept.</p>
+<h2 id="refactoring">Refactoring</h2>
+<div id="footer">
+&copy; 2018 <a xmlns:cc="http://creativecommons.org/ns#"
+href="/ipfs/QmNkq5RxznadwjtcGuL5DdNvRctfwk2hq7B9Wuf5DYQCHV"
+property="cc:attributionName"
+rel="cc:attributionURL">Simon Forman</a>
+<br />
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+<img alt="Creative Commons License" style="border-width:0" src="images/CC.png" />
+</a><br />
+This work is licensed under a
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+</a>.
+</div>
+
+
+</body>
+</html>

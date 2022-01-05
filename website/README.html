@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Large Flying Buildings</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="default.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Large Flying Buildings</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#details">Details</a></li>
+<li><a href="#marine-litterbots">Marine Litterbots</a></li>
+<li><a href="#metabolism">"Metabolism"</a></li>
+<li><a href="#provably-correct-software">Provably Correct Software</a>
+<ul>
+<li><a href="#lof-circuits">LoF Circuits</a></li>
+<li><a href="#joy">Joy</a></li>
+<li><a href="#hamiltons-hos">Hamilton's HOS</a></li>
+<li><a href="#prolog-for-machine-code">Prolog for Machine Code</a></li>
+</ul></li>
+<li><a href="#to-do">To Do</a></li>
+<li><a href="#misc.-additional-subjects">Misc. Additional Subjects</a></li>
+</ul>
+</nav>
+<h1 id="introduction">Introduction</h1>
+<p>This project has two main intertwined strands, one involving correct software and the other cellular swarm robots for garbage collection.</p>
+<p>The initial swarm will be ocean-going and work to clean up the <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Great_Pacific_garbage_patch.html">Great Pacific Garbage Patch</a> (and eventually other gyres) and then expand into terrestrial "litter-bots". There's also an aerial component, as well as a simple secure OS to run them. The software is coming along nicely and I'm working on the first prototypes.</p>
+<h1 id="details">Details</h1>
+<p>The oceanic environment, although harsher physically, is semantically much simpler than the terrestrial environment. This means the challenges of programming a robot to deal with living in the ocean are much simpler than the challenges of dealing with operation on land. Oceanic trash is mostly plastic and represents a trove of carbon atoms arranged in long-chain polymers. There are (at least) two economical methods to recycle it into new, useful forms: <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Thermal_depolymerization.html">Thermal Depolymerization</a> (TDP) and <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Molten_salt_oxidation.html">Molten Salt Oxidation</a> (MSO.) TPD converts plastic back into a crude liquid form (in other words, fuel) while MSO converts it into something called "synthesis gas" or syngas, which has a lot of industrial uses. Both TPD and MSO are exothermic reactions, and <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Molten_salt_reactor.html">MSO can also be used with nuclear fuel to make safe atomic reactors</a>. So, in theory, power is not a limiting factor.</p>
+<p>The swarm will collect and reprocess waste into more litterbots. The self-replication will enable a small "seed" system to grow to cope with the amount of trash no matter how large. Once throughput of the trash collecting system is great enough to deal with existing and future trash flows, excess capacity will be repurposed.</p>
+<p>Geodesic design and the <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Magnus_effect.html">Magnus effect</a> let me build aerial swarm robots that can combine in cellular forms (cf. Alexander G. Bell's cellular kites) to make large, permanently aloft structures, basically flying buildings, to enable mass transport for dealing with climate change, etc. If the mass-to-surface-area ratio is above a certain limit, the challenge is to keep things down, rather than to get them aloft. With intelligent control a "kite" can stay aloft 24/7 and there is effectively no upper limit to size (cf. Bucky Fuller's <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Cloud_Nine_(tensegrity_sphere).html">Cloud 9</a>, "city in the sky".)</p>
+<p>So that's one strand.</p>
+<p>The other strand is a system of provably-correct software development that's easy enough for a non-programmer to use with minimal coaching. It's based on the work of Dr. Margaret Hamilton coming out of the Apollo 11 program. (The book <a href="https://archive.org/details/systemdesignfrom00mart">"System Design from Provably-Correct Constructs"</a> by James Martin is probably the best source on it.)</p>
+<p>I'm combining that with a logical hardware model based on a notation called the "Laws of Form" (from a book of the same name by George Spencer-Brown), and with the Joy programming language (by Manfred von Thun), to enable me to write provably-correct systems "down to the metal" in a simple and self-contained codebase. (I was concerned that my swarm of robots should not be suborned and made to act improperly.)</p>
+<p>Putting it all together, I'm building a system that enables normal people to program computers easily with correct bug-free results, and use it to build a self-replicating robot swarm to collect and recycle the world's trash, enable mass transport of material and people, and provide power, fresh water, and structural materials globally.</p>
+<h1 id="marine-litterbots">Marine Litterbots</h1>
+<p>This is a crude schematic of the basic design of a marine robot.</p>
+<p><img src="images/Basic-Design.png" alt="image" /></p>
+<p>It's just a sphere with a keel and a sail and some electronics. It's only capability as such would be to navigate around the seas.</p>
+<p>One of the very first extensions of this basic design would be allowing them to find and connect to each other to form filaments. If a net or curtain hung below a filament it could act as a collector of floating trash. Each member of the filament is mobile and together they could lasso trash for further processign by other parts of the system.</p>
+<p>If they're fitted with ports these simple sphere-shaped bots can store and transport cargo inside the spheres.</p>
+<p>Modifications to the basic sphere-shape are easy to imagine: fish, "needle" buoy, etc...</p>
+<h1 id="metabolism">"Metabolism"</h1>
+<p>This is a crude schematic of the basic recycling "metabolism" for converting marine trash into biomass.</p>
+<p><img src="images/Recycling-Process-Outline-wb.png" alt="image" /></p>
+<p>The four blue rectangles are the main processing plants (no pun intended).</p>
+<ol>
+<li><p>MSO Reactor</p>
+<p>This takes in trash, solar energy, and salt, and produces Syngas and residual elements.</p></li>
+<li><p>Solar Still</p>
+<p>This takes in solar energy and salt water, and produces fresh water and salt.</p></li>
+<li><p>Water Column</p>
+<p>This takes in syngas and fresh water, and produces hydrogen and carbon dioxide.</p></li>
+<li><p>Greenhouse</p>
+<p>This takes in solar energy, fresh water, and carbon dioxide, and produces biomass</p></li>
+</ol>
+<h1 id="provably-correct-software">Provably Correct Software</h1>
+<p>Computers are a mapping between <em>human intentions</em> and <em>automatic machinery</em>.</p>
+<ul>
+<li>A machine doing work that contributes to no intention is waste.</li>
+<li>Human intentions must be harmonized or we just have mechanized war.
+<ul>
+<li>Core Transformation Process provides a perfect negotiation algorithm.</li>
+</ul></li>
+<li>Human intentions must be <em>ecological</em> or we will destroy ourselves.
+<ul>
+<li>Nature forms the source of sanity in an increasingly-mediated sensorium.</li>
+</ul></li>
+</ul>
+<p>Kinds of Computers:</p>
+<ul>
+<li>Calculator mode - well-defined functions on well-defined data. Up to e.g. Jupyter notebooks.</li>
+<li>Robots - self-contained and at least partly autonomous; mobile; interacts with environment. Modeled on animals.</li>
+<li>Factory - stationary; processes a flow; often single-purpose. Modeled on plants.</li>
+<li>Art - Video games, demo scene, music, videos, etc.</li>
+</ul>
+<p>I'm mostly concerned with the first three, but there's no reason your music synth should be buggy.</p>
+<p>Basic recipe for correct, minimal code: LoF to describe hardware, Joy to orchestrate it, HOS to develop Joy, and Prolog to write new machine code.</p>
+<h2 id="lof-circuits">LoF Circuits</h2>
+<p>In order to make trustworthy software you need to have trustworthy hardware, and for that you need to be able to prove, with symbolic logic, the behaviour of the circuits. A LoF expression is simultaneously a circuit schematic and a statement of binary Boolean logic.</p>
+<ul>
+<li>Laws of Form by George Spencer-Brown
+<ul>
+<li>"Markable Mark" website of George Burrnett-Stewart (sp?)</li>
+<li>Symbolic Logic notation</li>
+<li>hardware model</li>
+<li>Circuits are proofs.</li>
+<li><a href="source/joypy/docs/Correcet_Programming.html">"Correcr Programming"</a>
+<ul>
+<li>Symbolic Logic in the Laws of Form</li>
+<li>Building Circuits</li>
+<li>Simplifying Expressions</li>
+<li>SAT Solver</li>
+<li>A Model of Computation</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="joy">Joy</h2>
+<ul>
+<li>UI language
+<ul>
+<li>CLI</li>
+<li>Mouse chords</li>
+</ul></li>
+<li>Refactoring</li>
+<li>Compiling
+<ul>
+<li>to Prolog</li>
+<li>to Python</li>
+<li>to Factor, to machine code</li>
+<li>to Wirth RISC</li>
+</ul></li>
+<li>Implementations
+<ul>
+<li>Joypy (Joy in Python)</li>
+<li>Thun (Joy in Prolog)</li>
+<li>Joy Asm (Joy in Wirth RISC machine code)</li>
+</ul></li>
+</ul>
+<h2 id="hamiltons-hos">Hamilton's HOS</h2>
+<p>If you're typing code into a text editor and <em>hoping</em> that it describes a correct program, you're doing it wrong.</p>
+<p>By starting with a simple correct program and only modifying it by means of correctness-preserving operations we can develop software that is automatically proven-correct.</p>
+<ul>
+<li>Dr. Margaret Hamilton's Higher-Order Software
+<ul>
+<li><a href="https://archive.org/details/systemdesignfrom00mart">"System Design from Provably-Correct Constructs"</a> by James Martin</li>
+<li>As yet kinda unimplemented in the Joy, Python, and Prolog code I've written so far.</li>
+</ul></li>
+</ul>
+<p>The demo UI kinda has a tiny bit of failure-proofing in that it shows you, when you hover the mouse over a command, whether or not it will work with the current stack. But writing new Joy functions is still totally by hand. HOS would seem to me to imply a system that lets the user author new commands by a process of differentiating some initial blank (or library) command by certain provably-correct operations only. In any event, the commands to "inscribe" new commands should guard against invalid programs. (Any [in]valid programs that the guard cannot recognize are of interest!)</p>
+<h2 id="prolog-for-machine-code">Prolog for Machine Code</h2>
+<p>Very recently I've learned of extensive work done towards provably correct compilation in Prolog. It seems like this is the way to go to get from Joy to the metal. Here are some of the papers I've found:</p>
+<ul>
+<li>"Logic Programming and Compiler Writing" David H. D. Warren (this is the kickoff.)</li>
+<li>"Parsing and Compiling Using Prolog" Jacques Cohen and Timothy J. Hickey</li>
+<li>"Provably Correct Code Generation: A Case Study" Qian Wang, Gopal Gupta</li>
+<li>"From Programs to Object Code and back again using Logic Programming: Compilation and Decompilation" Jonathan Peter Bowen</li>
+<li>"Automatic Derivation of Code Generators from Machine Descriptions" R. G. G. Cattell</li>
+</ul>
+<h1 id="to-do">To Do</h1>
+<ul>
+<li>Add more links.</li>
+<li>Research organic marine glue
+<ul>
+<li>Easy, cheap, durable</li>
+<li>ecological
+<ul>
+<li>non-toxic</li>
+<li>sourced from something that won't miss it (i.e. kelp or microbes.)</li>
+<li>can be eaten (eventually) by something (The main reason why plastic trash is such a problem is that almost nothing can eat it.)</li>
+</ul></li>
+<li>All of the above for both tethers and membranes.</li>
+</ul></li>
+<li>Include
+<ul>
+<li>The code
+<ul>
+<li>Thun (Prolog code for interpreter and compilers.)</li>
+<li>Joypy? It's still useful.</li>
+<li>Joypy GUI demos.
+<ul>
+<li>Tkinter</li>
+<li>SDL</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<h1 id="misc.-additional-subjects">Misc. Additional Subjects</h1>
+<p>In no particular order.</p>
+<ul>
+<li>Prolog-implemented provably-correct compilers
+<ul>
+<li>Joy to Prolog</li>
+<li>Prolog to machine code</li>
+<li>Joy to machine code</li>
+<li>Code generator generators from machine descriptions</li>
+</ul></li>
+<li><a href="GUI.html">GUI</a>
+<ul>
+<li>"Humane Interface" by Jef Raskin</li>
+<li>Oberon OS</li>
+<li>Joy PL as unifying metaphor</li>
+</ul></li>
+<li>Biomimetic structures and processes
+<ul>
+<li>Pemaculture (applied ecology) for
+<ol>
+<li>industrial cleanup</li>
+<li>manufacturing</li>
+</ol></li>
+<li>Recycling/"metabolic" processes
+<ul>
+<li><a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Thermal_depolymerization.html">Thermal Depolymerization</a> (TDP)
+<ul>
+<li>modest pressure and temp (~300C IIRC)</li>
+<li>liquid slurry (like dirty oil.)</li>
+<li>can be remanufactured into low-grade plastic (feed stock for 3D printing, maybe?)</li>
+<li>Dunno about separating useful/useless parts</li>
+</ul></li>
+<li><a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Molten_salt_oxidation.html">Molten Salt Oxidation</a> (MSO)
+<ul>
+<li>low pressure, high (~3000C) temp</li>
+<li>essentially burning under liquid molten salt, exothermic</li>
+<li>plenty of salt in Ocean. Salt candle?</li>
+<li>salt extraction is fresh water production, eh?</li>
+<li>Handles all inputs.</li>
+<li>Output is highly factored.</li>
+<li>Syngas + junk molecules.</li>
+<li>Junk collects in the salt bath...</li>
+</ul></li>
+<li>Separation of living organisms from plastic
+<ul>
+<li>detecting life</li>
+<li>partitioning biomass from inanimate material</li>
+<li>conserving biomass, what to do with the organisms?
+<ul>
+<li>eject? Where do they go?</li>
+<li>foster? How to construct ecological habitat?</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="Cellular-Fractal-Structures.html">Cellular Fractal structures</a>
+<ul>
+<li>Alexander G. Bell's cellular kites</li>
+<li>Cellular structure means that the volume-to-surface ratio doesn't change as the structure scales. Bell wanted to show that heavier-than-air craft were not doomed to be no more than bird-sized.</li>
+</ul></li>
+<li>Construction methods of cellular structures
+<ul>
+<li>Simple units with simple construction algorithms</li>
+<li>Combined in simple ways that typically share the same construction algorithm (meaning connections between cells resemble the connections that make the cells.)</li>
+<li>Self-similar on multiple scales; Fractal. (Compact descriptions.)</li>
+<li>Should be easy to model with Finite Element methods.</li>
+<li>Large-scale structures can be designed to "degrade" gracefully. For example, large fractal structures can break and reform along the boundaries of their sub-assemblies, rather than submit to catastrophic failure.</li>
+<li>Cellular structures have anisotopy (sp?)</li>
+<li>Quasi-crystalline</li>
+<li>Tubes
+<ul>
+<li>Toilet paper tubes glued together in triplets</li>
+<li>Triplets glued together (similar construction algorithm) into larger triplets and tiled to make a plane.</li>
+<li>Modify diameter (3D printer) of tubes (now e.g. conic sections) to curve plane.</li>
+<li>Make cellular "polycoque" (it's not a monocoque) (sp?) for strong gracefully curved hulls, buildings, buckheads, &amp;c.</li>
+<li>Cover with some sort of laminate or membrane.</li>
+<li>Requires:
+<ul>
+<li>3D printers</li>
+<li>Glue</li>
+<li>some sort of frame or scaffolding</li>
+<li>software support</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Spittlebug architecture (Foam)
+<ul>
+<li>Spheres (same as tubes but with spheres).
+<ul>
+<li>Even simpler manufacturing: just bubble a gas through a e.g. plastic soup and collect the bubbles.</li>
+<li>Quality control with 3D scanning and acoustic sounding.</li>
+<li>Sort by size is easy.</li>
+<li>Grab anywhere with a little suction cup.</li>
+<li>Automatically aligned when placed in position.</li>
+<li>Great glue behaviour
+<ul>
+<li>pressure</li>
+<li>curvature</li>
+<li>"squish"</li>
+</ul></li>
+</ul></li>
+<li>Space ships and stations
+<ul>
+<li>self-repairing</li>
+<li>handles impacts gracefully</li>
+</ul></li>
+<li>Oceanic structures
+<ul>
+<li>weather storms (break apart and reform)</li>
+<li>storage for e.g. fresh water and other materials</li>
+</ul></li>
+<li>Fractal Nested (Biomimetic)
+<ul>
+<li>Spheres within spheres</li>
+<li>Vacuoles (sp?)</li>
+<li>Conserve (if the outer sphere breaks the inner ones disperse but survive to be collected again.)</li>
+</ul></li>
+</ul></li>
+<li>Bucky Fuller
+<ul>
+<li>Geodesic design
+<ul>
+<li><a href="source/geometry">Geometry files</a> (STL, OpenSCAD, etc.)</li>
+</ul></li>
+<li>Tensegrity
+<ul>
+<li><a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Tensairity.html">Tensairity</a> ( <a href="http://www.tensairitysolutions.com">Tensairity Solutions</a> ) I sure hope these guys let me use their idea! It's the ultimate expression of tensegrity (not counting atomic/molecular structures.)</li>
+</ul></li>
+<li><a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Cloud_Nine_(tensegrity_sphere).html">Cloud 9</a>, "city in the sky"</li>
+<li>Global engineering</li>
+</ul></li>
+<li><a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Magnus_effect.html">Magnus effect</a>
+<ul>
+<li>Lift goes up with the square of the radius</li>
+<li>So, with cellular structures where the mass is linear in the radius, you eventually get enough lift to overcome gravity, and then some.</li>
+<li><a href="MagnusMotive.html">Magnus Motive</a> company to make machines.</li>
+</ul></li>
+<li><a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Great_Pacific_garbage_patch.html">Great Pacific Garbage Patch</a>
+<ul>
+<li>Source of carbon (H, N, O, and salt, etc. are plentiful on the ocean.)</li>
+<li>Must be able to filter inorganic from organic</li>
+<li>sequester dangerous atoms, molecules.</li>
+</ul></li>
+<li>Litterbots
+<ul>
+<li>Marine</li>
+<li>Terrestrial</li>
+<li>Aerial</li>
+<li>LEO</li>
+</ul></li>
+<li>Prof. Wirth's RISC CPU for Project Oberon
+<ul>
+<li>Small, elegant, capable</li>
+<li>Good for educational purposes</li>
+<li>Emulators in C, JS, Java, Python, etc...</li>
+<li>Verilog for FPGAs</li>
+</ul></li>
+</ul>
+<div id="footer">
+&copy; 2018 <a xmlns:cc="http://creativecommons.org/ns#"
+href="/ipfs/QmNkq5RxznadwjtcGuL5DdNvRctfwk2hq7B9Wuf5DYQCHV"
+property="cc:attributionName"
+rel="cc:attributionURL">Simon Forman</a>
+<br />
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+<img alt="Creative Commons License" style="border-width:0" src="images/CC.png" />
+</a><br />
+This work is licensed under a
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+</a>.
+</div>
+
+
+</body>
+</html>
