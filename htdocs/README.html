@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Eumirion</title>
+  <title>Large Flying Buildings</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -21,7 +21,7 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Eumirion</h1>
+<h1 class="title">Large Flying Buildings</h1>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
@@ -29,7 +29,7 @@
 <li><a href="#details">Details</a></li>
 <li><a href="#marine-litterbots">Marine Litterbots</a></li>
 <li><a href="#metabolism">"Metabolism"</a></li>
-<li><a href="#provably-corect-software-sic">Provably-Corect Software (sic)</a>
+<li><a href="#provably-correct-software">Provably Correct Software</a>
 <ul>
 <li><a href="#lof-circuits">LoF Circuits</a></li>
 <li><a href="#joy">Joy</a></li>
@@ -40,20 +40,17 @@
 <li><a href="#misc.-additional-subjects">Misc. Additional Subjects</a></li>
 </ul>
 </nav>
-<p>Saturday, October 6, 2018</p>
 <h1 id="introduction">Introduction</h1>
-<p>If you're reading this, you've found the IPFS-hosted "site" of what I'm calling "Eumirion".</p>
-<p>My efforts have two main intertwined strands, one involving correct software and the other cellular swarm robots for garbage collection.</p>
-<p>The initial swarm will be ocean-going and work to clean up the <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Great_Pacific_garbage_patch.html">Great Pacific Garbage Patch</a> (and eventually other gyres) and I'll expand into terrestrial "litter-bots". There's also an aerial component, as well as a simple secure OS to run them. The software is coming along nicely and I'm working on the first prototypes.</p>
+<p>This project has two main intertwined strands, one involving correct software and the other cellular swarm robots for garbage collection.</p>
+<p>The initial swarm will be ocean-going and work to clean up the <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Great_Pacific_garbage_patch.html">Great Pacific Garbage Patch</a> (and eventually other gyres) and then expand into terrestrial "litter-bots". There's also an aerial component, as well as a simple secure OS to run them. The software is coming along nicely and I'm working on the first prototypes.</p>
 <h1 id="details">Details</h1>
 <p>The oceanic environment, although harsher physically, is semantically much simpler than the terrestrial environment. This means the challenges of programming a robot to deal with living in the ocean are much simpler than the challenges of dealing with operation on land. Oceanic trash is mostly plastic and represents a trove of carbon atoms arranged in long-chain polymers. There are (at least) two economical methods to recycle it into new, useful forms: <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Thermal_depolymerization.html">Thermal Depolymerization</a> (TDP) and <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Molten_salt_oxidation.html">Molten Salt Oxidation</a> (MSO.) TPD converts plastic back into a crude liquid form (in other words, fuel) while MSO converts it into something called "synthesis gas" or syngas, which has a lot of industrial uses. Both TPD and MSO are exothermic reactions, and <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Molten_salt_reactor.html">MSO can also be used with nuclear fuel to make safe atomic reactors</a>. So, in theory, power is not a limiting factor.</p>
 <p>The swarm will collect and reprocess waste into more litterbots. The self-replication will enable a small "seed" system to grow to cope with the amount of trash no matter how large. Once throughput of the trash collecting system is great enough to deal with existing and future trash flows, excess capacity will be repurposed.</p>
-<p>Geodesic design and the <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Magnus_effect.html">Magnus effect</a> let me build aerial swarm robots that can combine in cellular forms (cf. Alexander G. Bell's cellular kites) to make large, permanently-aloft structures, basically flying buildings, to enable mass transport for dealing with climate change, etc. If the mass-to-surface-area ratio is above a certain limit, the challenge is to keep things down, rather than to get them aloft. With intelligent control a "kite" can stay aloft 24/7 and there is effectively no upper limit to size (cf. Bucky Fuller's <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Cloud_Nine_(tensegrity_sphere).html">Cloud 9</a>, "city in the sky".)</p>
+<p>Geodesic design and the <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Magnus_effect.html">Magnus effect</a> let me build aerial swarm robots that can combine in cellular forms (cf. Alexander G. Bell's cellular kites) to make large, permanently aloft structures, basically flying buildings, to enable mass transport for dealing with climate change, etc. If the mass-to-surface-area ratio is above a certain limit, the challenge is to keep things down, rather than to get them aloft. With intelligent control a "kite" can stay aloft 24/7 and there is effectively no upper limit to size (cf. Bucky Fuller's <a href="/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Cloud_Nine_(tensegrity_sphere).html">Cloud 9</a>, "city in the sky".)</p>
 <p>So that's one strand.</p>
 <p>The other strand is a system of provably-correct software development that's easy enough for a non-programmer to use with minimal coaching. It's based on the work of Dr. Margaret Hamilton coming out of the Apollo 11 program. (The book <a href="https://archive.org/details/systemdesignfrom00mart">"System Design from Provably-Correct Constructs"</a> by James Martin is probably the best source on it.)</p>
 <p>I'm combining that with a logical hardware model based on a notation called the "Laws of Form" (from a book of the same name by George Spencer-Brown), and with the Joy programming language (by Manfred von Thun), to enable me to write provably-correct systems "down to the metal" in a simple and self-contained codebase. (I was concerned that my swarm of robots should not be suborned and made to act improperly.)</p>
 <p>Putting it all together, I'm building a system that enables normal people to program computers easily with correct bug-free results, and use it to build a self-replicating robot swarm to collect and recycle the world's trash, enable mass transport of material and people, and provide power, fresh water, and structural materials globally.</p>
-<p>I've got some working code and I am building the first prototypes of the robots now. I'm going to post all the docs and code on IPFS, and probably incorporate within a week or two here, so I can start to make some sales (toys at first, and schwag of course.)</p>
 <h1 id="marine-litterbots">Marine Litterbots</h1>
 <p>This is a crude schematic of the basic design of a marine robot.</p>
 <p><img src="images/Basic-Design.png" alt="image" /></p>
@@ -75,7 +72,7 @@
 <li><p>Greenhouse</p>
 <p>This takes in solar energy, fresh water, and carbon dioxide, and produces biomass</p></li>
 </ol>
-<h1 id="provably-corect-software-sic">Provably-Corect Software (sic)</h1>
+<h1 id="provably-correct-software">Provably Correct Software</h1>
 <p>Computers are a mapping between <em>human intentions</em> and <em>automatic machinery</em>.</p>
 <ul>
 <li>A machine doing work that contributes to no intention is waste.</li>

@@ -1,20 +1,16 @@
 
-Eumirion
-==============
+Large Flying Buildings
+==========================
 
-Saturday, October 6, 2018
 
 Introduction
 -----------------
 
-If you're reading this, you've found the IPFS-hosted "site" of what I'm
-calling "Eumirion".
-
-My efforts have two main intertwined strands, one involving correct
+This project has two main intertwined strands, one involving correct
 software and the other cellular swarm robots for garbage collection.
 
 The initial swarm will be ocean-going and work to clean up the `Great
-Pacific Garbage Patch`_ (and eventually other gyres) and I'll expand into
+Pacific Garbage Patch`_ (and eventually other gyres) and then expand into
 terrestrial "litter-bots".  There's also an aerial component, as well as
 a simple secure OS to run them.  The software is coming along nicely and
 I'm working on the first prototypes.
@@ -45,7 +41,7 @@ flows, excess capacity will be repurposed.
 
 Geodesic design and the `Magnus effect`_ let me build aerial swarm robots
 that can combine in cellular forms (cf. Alexander G. Bell's cellular
-kites) to make large, permanently-aloft structures, basically flying
+kites) to make large, permanently aloft structures, basically flying
 buildings, to enable mass transport for dealing with climate change, etc.
 If the mass-to-surface-area ratio is above a certain limit, the challenge
 is to keep things down, rather than to get them aloft.  With intelligent
@@ -72,14 +68,6 @@ to program computers easily with correct bug-free results, and use it to
 build a self-replicating robot swarm to collect and recycle the world's
 trash, enable mass transport of material and people, and provide power,
 fresh water, and structural materials globally.
-
-I've got some working code and I am building the first prototypes of the
-robots now.  I'm going to post all the docs and code on IPFS, and
-probably incorporate within a week or two here, so I can start to make
-some sales (toys at first, and schwag of course.)
-
-
-
 
 
 Marine Litterbots
@@ -130,7 +118,7 @@ The four blue rectangles are the main processing plants (no pun intended).
    This takes in  solar energy, fresh water, and carbon dioxide, and produces biomass
 
 
-Provably-Corect Software (sic)
+Provably Correct Software
 ---------------------------------
 
 Computers are a mapping between *human intentions* and *automatic machinery*.
