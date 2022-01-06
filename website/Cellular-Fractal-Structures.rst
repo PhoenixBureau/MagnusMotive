@@ -54,6 +54,7 @@ has a cube/tetra covering it.
 .. image:: images/tetra-cell-large-flock-top-ortho.png
 
 Seen edge-on with perspective the flock is almost invisible.
+This edge-on axis has the least resistance to airflow.
 
 .. image:: images/tetra-cell-large-flock-edge-on-perspective.png
 
@@ -83,9 +84,14 @@ height of the cube defined by the tetrahedron's verticies.)
 This kite would provide enough leftover lift to carry a payload (either
 depending from it or embedded in it) in the form of a cabin and/or cargo.
 
-Note the images above are all upside down compared to how kites are usually
+You can "swim" through the air using several modes of undulation.  You
+can have the cells themselves be flexible and capable of changing their
+dimensions, you can have two or more stiff assemblies connected to each
+other by flexible linkages, etc.
+
+(Note the images above are all upside down compared to how kites are usually
 constructed.  I think this would work but if I'm wrong then just turn the
-tetras upsidedown.
+tetras upsidedown.)
 
 
 Tubes
