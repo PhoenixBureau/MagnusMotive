@@ -264,8 +264,9 @@ smaller and simpler to bigger and more involved.  Each stage lays the
 foundation for the next.
 
 
----------------------------
 
+CLeaning up the `Great Pacific Garbage Patch`_
+-----------------------------------------------------
 
 This project has two main intertwined strands, one involving correct
 software and the other cellular swarm robots for garbage collection.
@@ -275,10 +276,6 @@ Pacific Garbage Patch`_ (and eventually other gyres) and then expand into
 terrestrial "litter-bots".  There's also an aerial component, as well as
 a simple secure OS to run them.  The software is coming along nicely and
 I'm working on the first prototypes.
-
-
-Details
------------------
 
 The oceanic environment, although harsher physically, is semantically
 much simpler than the terrestrial environment so the challenges
