@@ -20,11 +20,11 @@ Details
 -----------------
 
 The oceanic environment, although harsher physically, is semantically
-much simpler than the terrestrial environment.  This means the challenges
+much simpler than the terrestrial environment so the challenges
 of programming a robot to deal with living in the ocean are much simpler
-than the challenges of dealing with operation on land.  Oceanic trash is
-mostly plastic and represents a trove of carbon atoms arranged in
-long-chain polymers.  There are (at least) two economical methods to
+than those of operation on land.
+Oceanic trash is mostly plastic and represents a trove of carbon atoms arranged in
+long-chain polymers.  I know of at least two methods to
 recycle it into new, useful forms: `Thermal Depolymerization`_ (TDP) and
 `Molten Salt Oxidation`_ (MSO.)  TPD converts plastic back into a crude
 liquid form (in other words, fuel) while MSO converts it into something
@@ -37,13 +37,13 @@ The swarm will collect and reprocess waste into more litterbots.  The
 self-replication will enable a small "seed" system to grow to cope with
 the amount of trash no matter how large.  Once throughput of the trash
 collecting system is great enough to deal with existing and future trash
-flows, excess capacity will be repurposed.
+flows, excess capacity can be repurposed or recycled.
 
-Geodesic design and the `Magnus effect`_ let me build aerial swarm robots
+Geodesic design and the `Magnus effect`_ permit aerial swarm robots
 that can combine in cellular forms (cf. Alexander G. Bell's cellular
 kites) to make large, permanently aloft structures, basically flying
 buildings, to enable mass transport for dealing with climate change, etc.
-If the mass-to-surface-area ratio is above a certain limit, the challenge
+If the surface-area-to-mass ratio is above a certain limit, the challenge
 is to keep things down, rather than to get them aloft.  With intelligent
 control a "kite" can stay aloft 24/7 and there is effectively no upper
 limit to size (cf. Bucky Fuller's `Cloud 9`_, "city in the sky".)
@@ -60,8 +60,7 @@ I'm combining that with a logical hardware model based on a notation
 called the "Laws of Form" (from a book of the same name by George
 Spencer-Brown), and with the Joy programming language (by Manfred von
 Thun), to enable me to write provably-correct systems "down to the metal"
-in a simple and self-contained codebase.  (I was concerned that my swarm
-of robots should not be suborned and made to act improperly.)
+in a simple and self-contained codebase.
 
 Putting it all together, I'm building a system that enables normal people
 to program computers easily with correct bug-free results, and use it to
@@ -140,8 +139,8 @@ Kinds of Computers:
 - Factory - stationary; processes a flow; often single-purpose. Modeled on plants.
 - Art - Video games, demo scene, music, videos, etc.
 
-I'm mostly concerned with the first three, but there's no reason your
-music synth should be buggy.
+(I'm mostly concerned with the first three, but there's no reason your
+music synth should be buggy.)
 
 Basic recipe for correct, minimal code: LoF to describe hardware, Joy to
 orchestrate it, HOS to develop Joy, and Prolog to write new machine code.
@@ -238,6 +237,15 @@ To Do
 
 - Add more links.
 
+  - The code
+
+    - Thun (Prolog code for interpreter and compilers.)
+    - Joypy?  It's still useful.
+    - Joypy GUI demos.
+
+      - Tkinter
+      - SDL
+
 - Research organic marine glue
 
   - Easy, cheap, durable
@@ -249,16 +257,7 @@ To Do
 
   - All of the above for both tethers and membranes.
 
-- Include
 
-  - The code
-
-    - Thun (Prolog code for interpreter and compilers.)
-    - Joypy?  It's still useful.
-    - Joypy GUI demos.
-
-      - Tkinter
-      - SDL
 
 
 
@@ -410,7 +409,7 @@ In no particular order.
   - Marine
   - Terrestrial
   - Aerial
-  - LEO
+  - Orbit/Space
 
 - Prof. Wirth's RISC CPU for Project Oberon
 
