@@ -27,6 +27,8 @@ What's in this Repo
   GitHub seems to have that name hard-coded (I would have preferred
   "htdocs" but it's not important.)  The important thing to know is that
   it's not the documentation for the repo.
+- The `docs/images` dir contains images generated from the geometry
+  files.
 
 All datafiles, text, and imagery are released under the Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
