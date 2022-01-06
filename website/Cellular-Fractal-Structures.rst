@@ -229,12 +229,12 @@ Tensegrity Icosahedron
 
 
 
-.. _Cloud 9: /ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Cloud_Nine_(tensegrity_sphere).html
+.. _Cloud 9: https://en.wikipedia.org/wiki/Cloud_Nine_(tensegrity_sphere).html
 
-.. _Sierpinski: /ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Sierpinski_triangle
-.. _Rogallo wing: /ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Rogallo_wing.html
-.. _"Octet Truss": /ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Space_frame
-.. _Alexander G. Bell's cellular kites: /ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Tetrahedral_kite
+.. _Sierpinski: https://en.wikipedia.org/wiki/Sierpinski_triangle
+.. _Rogallo wing: https://en.wikipedia.org/wiki/Rogallo_wing.html
+.. _"Octet Truss": https://en.wikipedia.org/wiki/Space_frame
+.. _Alexander G. Bell's cellular kites: https://en.wikipedia.org/wiki/Tetrahedral_kite
 
 
 

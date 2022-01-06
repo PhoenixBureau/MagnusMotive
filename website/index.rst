@@ -6,6 +6,267 @@ Large Flying Buildings
 Introduction
 -----------------
 
+First of all, what are we talking about?
+
+- Large: several kilometers or even larger.
+- Flying: they spend most or all of the time in the air.
+- Buildings: containing people and infrastructure.
+
+How do we make them?  There are two areas to address:
+
+- The methods of manufacturing them.
+- The path from here & now to full production and deployment.
+
+(You can think of this as one three-dimensional structure if you permit
+the surface of the Earth to be treated as an approximately
+two-dimensional manifold and take time as the third dimension.)
+
+
+
+Purpose
+-------------------------------
+
+First, because it's inspiring.  You don't have to be a futurist or
+a science fiction fan to appreciate that.  Flying buildings and flying
+small cities are just a cool idea.
+
+Second, we're going to need to move a lot of people and material soon if
+climate change keeps up, and this provides a cheap carbon-neutral method.
+
+Third, we can use them as launch platforms for space rockets.
+
+Fourth...?  I'm sure there are other things I'm not thinking of, like
+maybe people would just want to live up there?  Scientific and military
+applications?
+
+
+
+Preliminary Concepts and Background
+-----------------------------------------
+
+Bucky Fuller, geodesic and tensgresity structures.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- https://en.wikipedia.org/wiki/Bucky_Fuller
+- https://en.wikipedia.org/wiki/Bucky_Fuller#The_geodesic_dome
+- https://en.wikipedia.org/wiki/Geodesic_dome
+- https://en.wikipedia.org/wiki/Tensegrity
+- https://en.wikipedia.org/wiki/Cloud_Nine_(tensegrity_sphere)
+
+> In geometry, a geodesic is commonly a curve representing in some sense
+the shortest[a] path between two points in a surface ... It is a
+generalization of the notion of a "straight line" to a more general
+setting. ~ https://en.wikipedia.org/wiki/Geodesic
+
+
+Here "Geodesic" refers to a class of structures that get their strength
+from their shape rather than the material they're made of.  Typically
+they are spherical although other shapes are possible.  (Suspension
+bridges could be thought of as geodesic structures.)  They use minimal
+shapes for maximal efficiency.
+
+"Tensgresity" refers to a structures made from a network of two kinds of
+parts: pure compression struts and pure tension ligaments or lines.  The
+word is a portmanteau of "tensional integrity".  These forms are
+extremely light and strong.
+
+(All tensgresity structures are geodesic but not vice versa.)
+
+"Cloud Nine": Huge geodesic spheres made of aluminum struts
+would float.  Sunlight bouncing around inside would heat up the air
+inside, causing it to expand, displacing some air from the sphere.  If
+the sphere is greater than 1/2 mile in diameter the amount of air
+displaced would weigh more than the sphere itself, and so it would float
+like a hot air balloon, even without a surface membrane.  If you add a
+membrane it will float overnight.
+
+"Octet truss": A specific kind of space-filling frame made of
+tetrahedrons (or, if you like of octahedrons.)  I have a shoe box-sized
+chunk of this that I made from toothpicks and glue.  It's really hard to
+understand how strong and light it is without making and handling
+examples.
+
+(BTW, FWIW, Wikipedia is kinda a mess around this little eddy of subject
+matter.  https://en.wikipedia.org/wiki/Octet_truss redirects to "Space
+frame", and that article says "Alexander Graham Bell from 1898 to 1908
+developed space frames based on tetrahedral geometry." and links to
+"tetrahedral truss", but that just redirects to "Tetrahedral kite".  All
+the "Space frame" article has to say about Bucky is, "Buckminster Fuller
+patented the octet truss in 1961 while focusing on architectural
+structures.")
+
+Anyhow, the "octet truss" is a space-filling grid of octahedrons and
+tetrahedrons with a very high strength to mass ratio.
+
+
+Alexander Graham Bell's Cellular Kites
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+"...came about from his experiments with Hargrave's box kites and his
+attempts to build a kite that was scalable and big enough to carry both a
+man and a motor."
+
+- https://en.wikipedia.org/wiki/Tetrahedral_kite
+- https://en.wikipedia.org/wiki/Hargrave_cellular_wing
+
+I read that critics of heavier-than-air flight were saying that it was
+impossible because the mass of a vehicle goes up as the cube of the
+length while the surface area only goes up with the square, and Bell
+wanted to show that that wasn't necessarily true.
+
+By constructing a large kite by tessellation of many smaller kites the
+surface area to mass ratio stays constant as the size changes.
+
+
+Magnus effect
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The Magnus effect is the deflection of the path of a spinning object
+moving through a fluid.
+
+It "has some engineering uses, for instance in the design of rotor ships
+and Flettner aeroplanes." ~ https://en.wikipedia.org/wiki/Magnus_effect
+
+This used to be more obscure but has recently become more widely know
+after some video of folks throwing basketballs off a dam went viral.  Now
+there are lots of videos and folks making model aircraft, etc.
+
+As it says in the Wikipedia entry:
+
+> The lift on the cylinder per unit length, F/L, is the product of the
+velocity, v (in metres per second), the density of the fluid, ρ (in
+kg/m3), and the strength of the vortex that is established by the
+rotation, G...
+
+Where G is:
+
+    G = 2πr²ω
+
+where "ω is the angular velocity of spin of the cylinder (in radians / second)
+and r is the radius of the cylinder (in metres)."
+
+The thing to notice is that the lift goes up with the second power of the
+radius of the rotor, so e.g., twice as large gets you four times as much
+lift!
+
+This suggests that kites that rotate or have rotating parts could
+manipulate air pressure in useful ways.  ;-)
+
+
+
+Various odds and bods
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Magenn (sic) wanted to manufacture tethered floating generators that used
+the Magnus effect to stay aloft and to generate power.  The company went
+out of business or something.
+
+There was a company in Australia that had a prototype of a Magnus effect
+vehicle that could do startling things.  I don't want to describe it
+because I don't want to foster skepticism.  If I can find videos I'll
+post them.
+
+Tensairity - https://en.wikipedia.org/wiki/Tensairity The fundamental
+discovery is that reinforced balloons are incredible strong.  Were talking
+as strong as steel at a fraction of the mass.  Inflatable bridges, etc.
+This is a whole class of structures.  The immediate obvious thing to do
+is use "tensairity" to make the compression struts of tensgresity
+structures.  People are already doing experiments like: "An inflatable
+wing using the principle of Tensairity" https://repository.tudelft.nl/islandora/object/uuid:306785d0-f75b-4378-a145-75905c83efa7/?collection=research
+
+
+
+Construction and Form
+-----------------------------------------------------
+
+See the `Cellular Fractal structures`_ subpage.
+
+Consider the construction of a single tetrahedron "cell" (omitting the
+sail for now.)  You need:
+
+- Six struts.
+- Four connectors.
+
+The struts are identical as are the connectors.  The process (whatever it
+is) to attach the struts to the connectors is identical so the machinery
+to do it is identical.
+
+So you only need two kinds of things (struts and connectors) and one kind
+of vertex assembly robot.  You would arrange six strut dispensers so that
+they hold six struts at a time in a tetrahedral shape and arrange four vertex
+assembly robots to join them together simultaneously.
+
+You would arrange 4n of those systems to produce four cells at once each
+cycle and feed sets of four cells at a time to another stage that
+connects their vertices to form a meta-tetrahedron.  You can arrange 16n
+cell producers to produce 4n meta-tetrahedra and assemble those into
+meta-meta-tetrahedra, and so on...  64n cell producers can produce one
+meta-meta-meta-tetrahedra per construction cycle (Note that creating an
+n-meta takes no more extra time than the 1-meta, as all connector joining
+can happen in parallel.)
+
+Now then, let's add sails and a drone's worth of chips, sensors, motors,
+and battery, and now each cell is a self-directed glider/kite.  (It's not
+quite a kite if it's not tethered.)
+
+(I want to say upfront that the tetrahedron might not be the best design
+for a self-directed kite form.  I've explored triangular tensgresity
+prisms.  The obvious thing to imitate is the maple seed.  Cells can
+maintain rotation with minimal power to "idle" in space.  The cellular
+fractal design pattern works for most practical forms.)
+
+If the individual cells are self-directed robots that can fly and join
+formations immediately after construction then we don't actually have to
+have an additional factory to assemble them into meta-cells.  They can
+just do it themselves.
+
+This also has implications for allocation of capacity and self-repair.  A
+damaged mega-lifter can simply split on transient "seams", eject the
+damaged sub-cells, and reform.  The sub-cells themselves can repeat the
+process, etc., so that only the actually damaged struts and connectors
+need to be replaced.  Everything else can be reused.  (This reminds me of
+how "purely functional" data structures amortize cost of modifications.)
+
+I also want to point out that I suspect that these structure will be
+amenable to Finite Element analysis, which is nice.  Essentially they
+are just large grids, eh?
+
+
+How to get There from Here
+--------------------------------------
+
+If all you wanted to do was make a really big kite you could do that, you
+would just need a lot of money.  You could buy bamboo poles, strong
+lines, and some Tyvek housewrap and get to work.  Above a certain ratio
+of surface area to mass it becomes difficult to keep a structure on the
+ground.  Before long your biggest problem would be keeping the thing on
+the ground.
+
+But it's not enough to "build it and they will come".
+
+Can we make money with this?  Is there a market for this kind of aerial
+transportation?  A business model?
+
+Can we at least explore the space without going broke?
+
+I think I can sort of self-fund this thing, and do it in a way that lets
+me validate demand and all that at each stage.  Without going on and on
+about it, here's my general drift:
+
+#) Toys and kits.
+#) Drones
+#) "Sky yachts" for hobbyists
+#) Heavy lifters
+#) Worldkite
+
+These aren't meant to be hard divisions, more like an unfolding from
+smaller and simpler to bigger and more involved.  Each stage lays the
+foundation for the next.
+
+
+---------------------------
+
+
 This project has two main intertwined strands, one involving correct
 software and the other cellular swarm robots for garbage collection.
 
