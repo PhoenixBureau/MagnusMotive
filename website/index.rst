@@ -265,7 +265,7 @@ foundation for the next.
 
 
 
-CLeaning up the `Great Pacific Garbage Patch`_
+Cleaning up the `Great Pacific Garbage Patch`_
 -----------------------------------------------------
 
 This project has two main intertwined strands, one involving correct
