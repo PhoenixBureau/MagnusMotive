@@ -423,18 +423,18 @@ In no particular order.
 .. _"Correcr Programming": source/joypy/docs/Correcet_Programming.html
 .. _"System Design from Provably-Correct Constructs": https://archive.org/details/systemdesignfrom00mart
 .. _Cellular Fractal structures: Cellular-Fractal-Structures.html
-.. _Cloud 9: https://en.wikipedia.org/wiki/Cloud_Nine_(tensegrity_sphere).html
+.. _Cloud 9: https://en.wikipedia.org/wiki/Cloud_Nine_(tensegrity_sphere)
 .. _GUI: GUI.html
-.. _Geometry files: source/geometry
-.. _Great Pacific garbage patch: https://en.wikipedia.org/wiki/Great_Pacific_garbage_patch.html
+.. _Geometry files: https://github.com/PhoenixBureau/MagnusMotive/tree/main/geometry
+.. _Great Pacific garbage patch: https://en.wikipedia.org/wiki/Great_Pacific_garbage_patch
 .. _Linux kernel archive: https://www.kernel.org/
-.. _MSO can also be used with nuclear fuel to make safe atomic reactors: https://en.wikipedia.org/wiki/Molten_salt_reactor.html
+.. _MSO can also be used with nuclear fuel to make safe atomic reactors: https://en.wikipedia.org/wiki/Molten_salt_reactor
 .. _Magnus Motive: MagnusMotive.html
-.. _Magnus effect: https://en.wikipedia.org/wiki/Magnus_effect.html
-.. _Molten salt oxidation: https://en.wikipedia.org/wiki/Molten_salt_oxidation.html
+.. _Magnus effect: https://en.wikipedia.org/wiki/Magnus_effect
+.. _Molten salt oxidation: https://en.wikipedia.org/wiki/Molten_salt_oxidation
 .. _Pandoc: https://pandoc.org/
 .. _Tensairity Solutions: http://www.tensairitysolutions.com
-.. _Tensairity: https://en.wikipedia.org/wiki/Tensairity.html
-.. _Thermal Depolymerization: https://en.wikipedia.org/wiki/Thermal_depolymerization.html
+.. _Tensairity: https://en.wikipedia.org/wiki/Tensairity
+.. _Thermal Depolymerization: https://en.wikipedia.org/wiki/Thermal_depolymerization
 .. _Wikipedia: https://www.wikipedia.org/
 
