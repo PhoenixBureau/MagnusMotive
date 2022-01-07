@@ -251,6 +251,8 @@ are just large grids, eh?
 How to get There from Here
 --------------------------------------
 
+See the `Magnus Motive`_  subpage.
+
 If all you wanted to do was make a really big kite you could do that, you
 would just need a lot of money.  You could buy bamboo poles, strong
 lines, and some Tyvek housewrap and get to work.  Above a certain ratio
