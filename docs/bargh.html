@@ -84,7 +84,7 @@
 <p>This implies that any real Joy-to-ASM compiler should be able to "look inside" the predicate of an ifte or while combinator to see which flags are the ones to check rather than defining the Joy comparison ops to actually reify the flag to a Boolean value on the stack. This shouldn't be too hard, but the tricky bit is that in Joy anything could leave a Boolean for branch and loop combinators! In practice, this may all be moot: The Prolog compiler will likely be able to "factor out" most of the weirdness from any given, practically-useful, definition!</p>
 <p>I already have a Joy-in-ASM interpreter for Wirth RISC that's very crude and incomplete but functional Writing enough "compiler" in Prolog to regenerate that code should give me a good idea what I'm about. And there's a lot of Forth code and information around compiling Forth that is useful. By the end of the weekend I should have some Joy code that is getting compiled to RISC ASM and drawing things in the framebuffer of the simulator.</p>
 <div id="footer">
-&copy; 2018 <a xmlns:cc="http://creativecommons.org/ns#"
+&copy; 2018, 2022 <a xmlns:cc="http://creativecommons.org/ns#"
 href="/ipfs/QmNkq5RxznadwjtcGuL5DdNvRctfwk2hq7B9Wuf5DYQCHV"
 property="cc:attributionName"
 rel="cc:attributionURL">Simon Forman</a>
