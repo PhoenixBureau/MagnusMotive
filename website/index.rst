@@ -26,18 +26,34 @@ two-dimensional manifold and take time as the third dimension.)
 Purpose
 -------------------------------
 
-First, because it's inspiring.  You don't have to be a futurist or
-a science fiction fan to appreciate that.  Flying buildings and flying
+Clean up The Great Pacific Garbage Patch
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The original inspiration for doing this came from wanting to find a way to clean up
+The Great Pacific Garbage Patch.
+I figured the only way to do that was to mimic nature and create a simple artificial "ant farm"
+that could start small and scale up to handle the problem.  Later on the idea of creating large
+flying buildings sort of fell out of the original plan.
+
+It's Inspiring.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You don't have to be a futurist or
+a science fiction fan to think flying buildings and flying
 small cities are just a cool idea.
+
+Mass Transport to deal with Climate Change
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Second, we're going to need to move a lot of people and material soon if
 climate change keeps up, and this provides a cheap carbon-neutral method.
 
-Third, we can use them as launch platforms for space rockets.
+Homestead in the Sky
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Fourth...?  I'm sure there are other things I'm not thinking of, like
-maybe people would just want to live up there?  Scientific and military
-applications?
+We can use them as platforms and just live up there?
+
+
 
 
 
@@ -265,7 +281,7 @@ foundation for the next.
 
 
 
-Cleaning up the `Great Pacific Garbage Patch`_
+Cleaning up the Great Pacific Garbage Patch
 -----------------------------------------------------
 
 This project has two main intertwined strands, one involving correct
@@ -328,7 +344,7 @@ fresh water, and structural materials globally.
 
 
 Marine Litterbots
------------------
+^^^^^^^^^^^^^^^^^^^^^
 
 This is a crude schematic of the basic design of a marine robot.
 
@@ -350,7 +366,7 @@ Modifications to the basic sphere-shape are easy to imagine: fish, "needle" buoy
 
 
 "Metabolism"
------------------
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 This is a crude schematic of the basic recycling "metabolism" for converting marine trash into biomass.
 
