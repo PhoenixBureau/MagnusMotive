@@ -1,13 +1,35 @@
 Magnus Motive
 ==============
 
-The `Magnus effect`_ equation for lift says that the length, velocity,
-and rotation contributions are linear, but that of the radius is squared.
-E.g. a rotor of twice the radius will generate four times the lift.
+I'm not a great businessman, but I like to make sales.  My dad was a
+salesman, and he used to say, "Son, nothing happens until somebody makes
+a sale."  Granted, he might have been a bit biased, but there's some
+truth to what he said, eh?
 
-The Magnus effect rotor is like a wheel for air, while the wing is like a sled-runner.
 
-Applications
+
+
+
+Org & Business Structure
+--------------------------------
+
+
+Non-profit to hold IP
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Non-profit to hold IP and coordinate R&D.
+
+
+Businesses in the (real) Cloud
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The Non-Profit Foundation can license the tech to for-profit businesses to apply?
+
+I have no real clue about all this at this stage.
+
+
+
+Progression of Applications
 --------------------------------
 
 - Toys
@@ -35,11 +57,23 @@ Applications
 Toy Ideas
 --------------------------------
 
-#) A thin plastic disk that has flanges on both sides so you can attach two toilet paper tubes perpendicular to the disk (along its axis of rotation.) There would be a notch in the edge of the disk so you can lay a rubber-band in there and wind it around the tubes close to the disk to provide launch power.  One piece, could be printed, user supplies tubes (and maybe band?)
+1) A thin plastic disk that has flanges on both sides so you can attach
+two toilet paper tubes perpendicular to the disk (along its axis of
+rotation.) There would be a notch in the edge of the disk so you can lay
+a rubber-band in there and wind it around the tubes close to the disk to
+provide launch power.  One piece, could be printed, user supplies tubes
+(and maybe band?)
 
-#) For paper towel tubes you could have a center plastic band slightly larger than the tube and about a centimeter wide, with a little hook for the rubber-band.  You would have end-caps that provide lateral stability.  Printable.
+2) For paper towel tubes you could have a center plastic band slightly
+larger than the tube and about a centimeter wide, with a little hook for
+the rubber-band.  You would have end-caps that provide lateral stability.
+Printable.
 
-#) Small toy drones basically like regular toy drones except with tubes instead of propellers.  (Although a few propellers for thrust might work, many designs will rely solely on tubes.)
+3) Small toy drones basically like regular toy drones except with tubes
+instead of propellers.  (Although a few propellers for thrust might work,
+many designs will rely solely on tubes.)
+
+------------
 
 - The cardboard tubes and rubber bands toys are meant to:
   - spread the ideas and establish brand
@@ -60,6 +94,8 @@ Toy Ideas
 
 Simple Paper Towel Tube Toy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+(TODO: Clean this up, expand it, add photos and video, and post it to Instructables or something?)
 
 If you want to play with the Magnus effect here's a simple toy you can
 make:
