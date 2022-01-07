@@ -187,10 +187,10 @@ Icosahedral Cell
 ---------------------------
 
 - six struts
-  - length Phi (edge length of icosa is 1.)
-  - ends are twelve verticies of icosa.
-  - three pairs, 1 x Phi Golden Rectangle, oriented on Cartesian axies,
-    cube symmetry.
+  - each of length Phi (~1.618..., where the edge length of the icosahedron is 1.)
+  - the ends of the struts are twelve verticies of the icosahedron.
+  - arranged in three pairs, each defining a 1xPhi or Golden Rectangle, 
+    and each oriented on one of the three Cartesian axies in an interlocking pattern.
 
 - eight equilateral triangles
   - icosa faces, edge length 1
@@ -198,7 +198,8 @@ Icosahedral Cell
   - other 12 faces and 6 edges are not part of the system
 
 - Own frame of reference
-- interconnected web of tension and compression with no center, self-stable.
+- interconnected, self-stable web of tension and compression with no center
+  (like how the surface of the Earth has no center, eh?).
 - NASA robotics project (led by V. Sunspiral)
 
 

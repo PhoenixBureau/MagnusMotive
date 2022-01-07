@@ -400,8 +400,12 @@ Kinds of Computers:
 (I'm mostly concerned with the first three, but there's no reason your
 music synth should be buggy.)
 
-Basic recipe for correct, minimal code: LoF to describe hardware, Joy to
-orchestrate it, HOS to develop Joy, and Prolog to write new machine code.
+Basic recipe for correct, minimal code:
+
+- LoF to describe hardware
+- Joy to orchestrate it
+- HOS to develop Joy
+- and Prolog to write new machine code.
 
 
 LoF Circuits
@@ -414,7 +418,7 @@ a circuit schematic and a statement of binary Boolean logic.
 
 - Laws of Form by George Spencer-Brown
 
-  - "Markable Mark" website of George Burrnett-Stewart (sp?)
+  - `Markable Mark`_ website of George Burnett-Stuart
   - Symbolic Logic notation
   - hardware model
   - Circuits are proofs.
@@ -688,10 +692,12 @@ In no particular order.
 .. _MSO can also be used with nuclear fuel to make safe atomic reactors: https://en.wikipedia.org/wiki/Molten_salt_reactor
 .. _Magnus Motive: MagnusMotive.html
 .. _Magnus effect: https://en.wikipedia.org/wiki/Magnus_effect
+.. _Markable Mark: http://www.markability.net/
 .. _Molten salt oxidation: https://en.wikipedia.org/wiki/Molten_salt_oxidation
 .. _Pandoc: https://pandoc.org/
 .. _Tensairity Solutions: http://www.tensairitysolutions.com
 .. _Tensairity: https://en.wikipedia.org/wiki/Tensairity
 .. _Thermal Depolymerization: https://en.wikipedia.org/wiki/Thermal_depolymerization
 .. _Wikipedia: https://www.wikipedia.org/
+
 
