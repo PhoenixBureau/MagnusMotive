@@ -356,7 +356,7 @@ This is a crude schematic of the basic recycling "metabolism" for converting mar
 
 .. image:: images/Recycling-Process-Outline-wb.png
 
-The four blue rectangles are the main processing plants (no pun intended).
+The four blue rectangles are the main processing plants:
 
 #) MSO Reactor
 
