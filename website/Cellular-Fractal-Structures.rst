@@ -1,9 +1,6 @@
 Cellular Fractal Structures
 ===============================
 
-`home`_
-
-
 Cellular fractal structures are one of the basic design motifs of Eumirion.
 
 - Cellular
@@ -234,7 +231,6 @@ Tensegrity Icosahedron
 
 
 .. _Cloud 9: https://en.wikipedia.org/wiki/Cloud_Nine_(tensegrity_sphere).html
-.. _home: index.html
 .. _Sierpinski: https://en.wikipedia.org/wiki/Sierpinski_triangle
 .. _Rogallo wing: https://en.wikipedia.org/wiki/Rogallo_wing.html
 .. _"Octet Truss": https://en.wikipedia.org/wiki/Space_frame

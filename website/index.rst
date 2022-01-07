@@ -524,19 +524,6 @@ To Do
       - Tkinter
       - SDL
 
-- Research organic marine glue
-
-  - Easy, cheap, durable
-  - ecological
-
-    - non-toxic
-    - sourced from something that won't miss it (i.e. kelp or microbes.)
-    - can be eaten (eventually) by something (The main reason why plastic trash is such a problem is that almost nothing can eat it.)
-
-  - All of the above for both tethers and membranes.
-
-
-
 
 
 Misc. Additional Subjects
