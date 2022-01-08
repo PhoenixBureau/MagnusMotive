@@ -529,6 +529,7 @@ In no particular order.
   - "Humane Interface" by Jef Raskin
   - Oberon OS
   - Joy PL as unifying metaphor
+  - `Xerblin Project`_
 
 
 - Biomimetic structures and processes
@@ -688,5 +689,5 @@ In no particular order.
 .. _Tensairity: https://en.wikipedia.org/wiki/Tensairity
 .. _Thermal Depolymerization: https://en.wikipedia.org/wiki/Thermal_depolymerization
 .. _Wikipedia: https://www.wikipedia.org/
-
+.. _Xerblin Project: https://sr.ht/~sforman/Xerblin/
 
