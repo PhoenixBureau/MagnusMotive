@@ -32,30 +32,10 @@ I have no real clue about all this at this stage.
 Progression of Applications
 --------------------------------
 
-- Toys
-  - cardboard tubes and rubber bands
-  - toy drones, kits
-
-- Drones (non-toy)
-  - litterbots
-  - cargo
-  - fire-brigade
-  - survey
-  - power generation
-  - systems modeled on social insects
-
-- Luxury Yachts
-  - small batches and Unique
-  - "New Age of Air"
-
-- Heavy Lifters
-  - very large (mile-wide) cellular design
-  - million-person transport
-  - permanent aerial structures
-
-
-Toy Ideas
---------------------------------
+Toys
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- cardboard tubes and rubber bands
+- toy drones, kits
 
 1) A thin plastic disk that has flanges on both sides so you can attach
 two toilet paper tubes perpendicular to the disk (along its axis of
@@ -73,6 +53,29 @@ Printable.
 instead of propellers.  (Although a few propellers for thrust might work,
 many designs will rely solely on tubes.)
 
+
+Drones (non-toy)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- litterbots
+- cargo
+- fire-brigade
+- survey
+- power generation
+- systems modeled on social insects
+
+Luxury Yachts
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- small batches and Unique
+- "New Age of Air"
+
+Heavy Lifters
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- very large (mile-wide) cellular design
+- million-person transport
+- permanent aerial structures
+
+
+Misc.
 ------------
 
 - The cardboard tubes and rubber bands toys are meant to:
