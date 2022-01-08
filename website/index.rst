@@ -512,23 +512,7 @@ get from Joy to the metal.  Here are some of the papers I've found:
 
 
 
-To Do
------------------
-
-- Add more links.
-
-  - The code
-
-    - Thun (Prolog code for interpreter and compilers.)
-    - Joypy?  It's still useful.
-    - Joypy GUI demos.
-
-      - Tkinter
-      - SDL
-
-
-
-Misc. Additional Subjects
+Misc.
 -------------------------------
 
 In no particular order.
