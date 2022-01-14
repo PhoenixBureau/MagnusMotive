@@ -1,7 +1,7 @@
 Cellular Fractal Structures
 ===============================
 
-Cellular fractal structures are one of the basic design motifs of Eumirion.
+Cellular fractal structures are one of the basic design motifs.
 
 - Cellular
 
