@@ -1,7 +1,7 @@
 
 module tube(height, radius, thickness) {
     half_thickness = thickness / 2;
-    
+
     // Main hollow tube column.
     difference() {
         cylinder(h=height, r=radius + half_thickness, $fn=60);
@@ -11,35 +11,24 @@ module tube(height, radius, thickness) {
 
 }
 
-module t0() tube(30, 7, 1);
-
-X0 = 15;
-
-module t1() {
-    t0();
-    translate([X0, 0, 0]) t0();
-    translate([X0 * cos(60), X0*sin(60), 0]) t0();
+module tubular(rank, off, h, r, th) {
+    if (rank <= 0) {
+        tube(h, r, th);
+    } else {
+        subrank = rank - 1;
+        dist = 2^subrank * off;
+        tubular(subrank, off, h, r, th);
+        translate([dist, 0, 0])
+            tubular(subrank, off, h, r, th);
+        translate([dist * cos(60), dist * sin(60), 0])
+            tubular(subrank, off, h, r, th);
+    }
 }
 
-X1 = X0 + X0;
-module t2() {
-    t1();
-    translate([X1, 0, 0]) t1();
-    translate([X1 * cos(60), X1*sin(60), 0]) t1();
-}
+height = 30;
+radius = 7;
+thickness = 1;
+separation_dist = radius * 2 + thickness;
+tubular(4, separation_dist, height, radius, thickness);
 
-X2 = X1 + X1;
-module t3() {
-    t2();
-    translate([X2, 0, 0]) t2();
-    translate([X2 * cos(60), X2*sin(60), 0]) t2();
-}
 
-X3 = X2 + X2;
-module t4() {
-    t3();
-    translate([X3, 0, 0]) t3();
-    translate([X3 * cos(60), X3*sin(60), 0]) t3();
-}
-//t4();
-t0();
